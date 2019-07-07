@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="AboutMarco.css">
+    </head>
+    <body>
+        <section class="center">
+            <header>
+                <div id = "top">
+                    <h1> Landing Page About Marco de Freitas</h1>  
+                </div>
+            </header>
+            <div id = "BigContainer">
+           <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="pics/Solo2.jpg">
+</div>
+<div class="mySlides fade">
+  <img src="pics/Sheeba1.jpg">
+</div>
+<div class="mySlides fade">
+  <img src="pics/Freinds2.jpg">
+</div>               
+</div>   
+</div>
+            <div id="left">
+            <section id = "para">
+                <p>I am 23 years old. I was born in South Africa, Cape Town and grew up there. My family originates from a Portuguese island called Madiera.</p>
+                <p> I am currently a student studying GIT and Computer Science. I enjoy my studies as I am passionate about using computer programming and software to solve real-world problems </p>
+                <p id ="freindpara">I have stayed in-touch with most of my freinds from high-school. I enjoy hanging out with them at scenic views or a parties.</p>
+                <p id="dogpara">I have a very cute dog called Sheeba. She's a small white Maltese poodle with a fantastic personality. I thoroughly enjoy her company</p>
+            </section>
+            <section id = "frm">
+                <form>
+                    <div id="topblock">
+                    <div id="checks">
+                    <h4>Check Box</h4>
+                    <p> select a box to show or hide the content (text and pitures)</p>
+                    <input type="checkbox" id="dog" value="Sheeba" checked="checked" onchange="checkDog(this)"> Marco's Dog<br>
+                    <input type="checkbox" id="freind" value="Freinds" checked="checked" onchange="checkFreind(this)"> Marco's Freinds<br>
+                    </div>
+                    <div id="textfieldbox">
+                    <h4>Text Field</h4>
+                    <p>Try typing "marco"</p>
+                    <input type="text" name="txtfield" id="txt" placeholder="type marco here" onsubmit="doalert(this)">
+                    <input type="submit" value="Submit" onclick="doalert(this)">
+                    </div>
+                    </div>
+                    <div id="radiobox">
+                    <h4>Radio Box</h4>
+                    <input type="radio" name="rd" id="showcheck" value="other" checked="checked" onchange="showCheck(this)"> Show 
+                    <input type="radio" name="rd" id="hidecheck" value="other"  onchange="hideCheck(this)"> Hide 
+                </div>
+                </form>
+            </section>
+            </div>
+            
+            
+            <footer>
+            </footer>
+        </section>
+        <script type="text/javascript" src="AboutMarco.js"></script>
+    </body>
+</html>
